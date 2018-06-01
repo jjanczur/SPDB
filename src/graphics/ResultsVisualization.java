@@ -38,9 +38,9 @@ public class ResultsVisualization {
     }
 
     /**
-     * Method to scale points for visualization - perform normalization to 0
-     * It takes the min X and min Y coordinates among all of the points and subtract that value from the original
-     X and Y coordinates - perform normalization to 0 for original coordinates
+     * Method to scale points for visualization - perform normalization to 0<br>
+     * It takes the min X and min Y coordinates among all of the points and subtract that value from the original<br>
+     X and Y coordinates - perform normalization to 0 for original coordinates<br>
      */
     private void scalePoints() {
         List<Point> allPoints = new ArrayList<>();
@@ -69,8 +69,10 @@ public class ResultsVisualization {
         }
     }
 
-    /*
-        Method to draw and save visualization image
+    //TODO poprawić bo nie działa zbyt dobrze :/
+    /**
+     * Method to draw and save visualization image
+     * @param outputFileName - output filename
      */
     public void drawImage(String outputFileName) {
         createImage();

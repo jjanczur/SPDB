@@ -36,12 +36,12 @@ public class ChameleonAlgorithm {
 
 
     /**
-     * Combiner method of the algorithm
-     * 1. - create a full graph where the vertices of a graph is a point and an edge - weight is 1/distance between two points
-     *    - perform knn algorithm - removes all the edges except those between k nearest neighbours
-     *    - initialise entry clusters - find connected components in knnGraph using DFS algorithm and create clusters
-     * 2. - perform clusters partition until the initNrOfClusters is achieved
-     * 3. - until the resultNrOfClusters is achieved perform sub-clusters bonding based on relative inter-connectivity, relative closeness and inter-connectivity of each graph
+     * Combiner method of the algorithm<br>
+     * 1. - create a full graph where the vertices of a graph is a point and an edge - weight is 1/distance between two points<br>
+     *    - perform knn algorithm - removes all the edges except those between k nearest neighbours<br>
+     *    - initialise entry clusters - find connected components in knnGraph using DFS algorithm and create clusters<br>
+     * 2. - perform clusters partition until the initNrOfClusters is achieved<br>
+     * 3. - until the resultNrOfClusters is achieved perform sub-clusters bonding based on relative inter-connectivity, relative closeness and inter-connectivity of each graph<br>
      *
      * @return list of clusters after all three parts of the algorithm
      */
@@ -79,7 +79,7 @@ public class ChameleonAlgorithm {
 
 
     /**
-     *  Method to initialize complete graph.
+     *  Method to initialize complete graph.<br>
      It computes the distances between each pair of points and assigns the weight as 1/distance.
      */
     private void initCompleteGraph() {
@@ -102,10 +102,10 @@ public class ChameleonAlgorithm {
 
 
 
-    /**Implementation of KNN algorithm for points in 2D
-     * Method to find k nearest neighbours for each point.
-     *For each point it finds the weight of its k-th nearest neighbour that is called minWeight
-     and removes these edges which weights are less than minWeight.
+    /**Implementation of KNN algorithm for points in 2D<br>
+     * Method to find k nearest neighbours for each point.<br>
+     *For each point it finds the weight of its k-th nearest neighbour that is called minWeight<br>
+     and removes these edges which weights are less than minWeight.<br>
      *
      */
     private void runKnn() {
@@ -139,9 +139,9 @@ public class ChameleonAlgorithm {
     }
 
     /**
-     * Method to init clusters.
-     * It finds connected components in knnGraph using DFS algorithm.
-     * For each connected component it creates a new cluster.
+     * Method to init clusters.<br>
+     * It finds connected components in knnGraph using DFS algorithm.<br>
+     * For each connected component it creates a new cluster.<br>
      */
     private void initClusters() {
         boolean[] visitedPoints = new boolean[points.size()];
@@ -156,8 +156,8 @@ public class ChameleonAlgorithm {
         }
     }
 
-    /** DTF algorithm
-     * Recursive method to find connected points in knnGraph.
+    /** DTF algorithm<br>
+     * Recursive method to find connected points in knnGraph.<br>
      * @param idx index of vertex
      * @param visitedPoints boolean list of visited vertices
      * @param connectedPoints list of point that are connected due to the DTF algorithm
@@ -195,10 +195,10 @@ public class ChameleonAlgorithm {
     }
 
     /**
-     * Method to partition cluster into two new clusters.
-     *It splits the points of the original cluster horizontally,
-     if maximal distance between X coordinates is greater than maximal distance between Y coordinates,
-     or vertically in other case.
+     * Method to partition cluster into two new clusters.<br>
+     *It splits the points of the original cluster horizontally,<br>
+     if maximal distance between X coordinates is greater than maximal distance between Y coordinates,<br>
+     or vertically in other case.<br>
      * @param cluster Cluster to partition
      * @return two clusters created from the big one in the input
      */
@@ -240,8 +240,8 @@ public class ChameleonAlgorithm {
     }
 
     /**
-     * Method to find two clusters to connect in the third part of the algorithm
-     * It computes connection metrics for each pair of clusters and returns the best one.
+     * Method to find two clusters to connect in the third part of the algorithm<br>
+     * It computes connection metrics for each pair of clusters and returns the best one.<br>
      * @return list of two best clusters to connect
      */
     private List<Cluster> findTwoClustersToConnect() {
@@ -324,8 +324,8 @@ public class ChameleonAlgorithm {
     }
 
     /**
-     *  Method to compute inter - connectivity between two clusters
-     * It returns the minimal weight of edge between two points from different clusters
+     *  Method to compute inter - connectivity between two clusters<br>
+     * It returns the minimal weight of edge between two points from different clusters<br>
      * @param firstCluster first cluster for which EC will be determine
      * @param secondCluster second cluster for which EC will be determine
      * @return minimal weight of edge between two points from different clusters

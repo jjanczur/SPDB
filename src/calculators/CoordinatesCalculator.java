@@ -14,9 +14,9 @@ public class CoordinatesCalculator {
     private final static double MAP_HEIGHT = 1000.0;
 
 
-    /** Method to calculate distance between two points on a sphere.
-     * It implements Haversine formula
-     * https://en.wikipedia.org/wiki/Haversine_formula
+    /** Method to calculate distance between two points on a sphere.<br>
+     * It implements Haversine formula<br>
+     * https://en.wikipedia.org/wiki/Haversine_formula<br>
      * @param first first point with it's coordinates
      * @param second second point with it's coordinates
      * @return distance between two points
@@ -38,9 +38,9 @@ public class CoordinatesCalculator {
 
      */
 
-    /** Method to convert longitude to X coordinate.
-     * It implements Mercator projection.
-     * https://en.wikipedia.org/wiki/Mercator_projection
+    /** Method to convert longitude to X coordinate.<br>
+     * It implements Mercator projection.<br>
+     * https://en.wikipedia.org/wiki/Mercator_projection<br>
      * @param longitude longitude of a point
      * @return longitude as a X coordinate
      */
@@ -49,9 +49,9 @@ public class CoordinatesCalculator {
     }
 
 
-    /** Method to convert longitude to Y coordinate.
-     * It implements Mercator projection.
-     * https://en.wikipedia.org/wiki/Mercator_projection
+    /** Method to convert longitude to Y coordinate.<br>
+     * It implements Mercator projection.<br>
+     * https://en.wikipedia.org/wiki/Mercator_projection<br>
      * @param latitude latitude of the point
      * @return latitude as an Y coordinate
      */
