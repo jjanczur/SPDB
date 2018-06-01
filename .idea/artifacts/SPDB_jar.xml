@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SPDB:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SPDB_jar</output-path>
+    <root id="archive" name="SPDB.jar">
+      <element id="module-output" name="SPDB" />
+    </root>
+  </artifact>
+</component>
