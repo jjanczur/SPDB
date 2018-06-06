@@ -17,10 +17,10 @@ Program należy uruchomić podając mu kolejno 4 argumenty:<br>
 java Combiner myFileName.csv 3 15 3
 
 <b>Skompilowany .jar jest w lokalizacji:</b><br><br>
-Folder dataset w którym będą zbiory .csv powinien być w tej samej lokalizacji w której plik SPDB.jar <br>
+Folder data w którym będą zbiory .csv powinien być w tej samej lokalizacji w której plik SPDB.jar <br>
 
  <b>Plik .jar jest w lokalizacji: </b>/SPDB_jar/SPDB.jar<br>
- <b>Plik z danymi do wywołania jest w lokalizacji: </b>/SPDB_jar/dataset/utah_ariz_newMexico_colorado.csv<br>
+ <b>Plik z danymi do wywołania jest w lokalizacji: </b>/SPDB_jar/data/utah_ariz_newMexico_colorado.csv<br>
  
  java -jar SPDB.jar utah_ariz_newMexico_colorado.csv 4 8 4 
  

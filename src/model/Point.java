@@ -19,6 +19,7 @@ public class Point {
         this.id = id;
     }
 
+
     public int getId() {
         return id;
     }

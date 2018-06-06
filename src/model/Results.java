@@ -29,6 +29,7 @@ public class Results {
         this.nrOfPositiveClassifiedPoints = nrOfPositiveClassifiedPoints;
     }
 
+
     public double getAccuracy() {
         return accuracy;
     }

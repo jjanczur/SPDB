@@ -231,6 +231,7 @@ public class ChameleonAlgorithm {
         firstCluster.setPoints(pointsToPartition.subList(0, nrOfPoints / 2));
         firstCluster.setGraph(createSubgraph(firstCluster.getPoints()));
 
+
         // Create second cluster
         Cluster secondCluster = new Cluster();
         secondCluster.setPoints(pointsToPartition.subList(nrOfPoints / 2, nrOfPoints));

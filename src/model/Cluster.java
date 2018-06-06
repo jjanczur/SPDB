@@ -59,6 +59,7 @@ public class Cluster {
         this.EC = tempEC / points.size();
     }
 
+
     public double getEC() {
         return EC;
     }

@@ -36,6 +36,7 @@ public class CoordinatesCalculator {
 
     /*
 
+
      */
 
     /** Method to convert longitude to X coordinate.<br>

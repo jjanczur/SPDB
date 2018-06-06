@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 public class CsvParser {
 
-    private static final String SEPARATOR = ",";
+    private static final String SEPARATOR = ";";
 
     /**
      * Method to read points from csv file it reads the file line by line and creates the points
@@ -29,6 +29,7 @@ public class CsvParser {
 
         List<Point> points = new ArrayList<>();
         for (int i = 0; i < csvLines.size(); i++) {
+            System.out.println(i);
             Point point = createPointFromCsvLine(csvLines.get(i), i);
             points.add(point);
         }
@@ -56,3 +57,4 @@ public class CsvParser {
         return point;
     }
 }
+

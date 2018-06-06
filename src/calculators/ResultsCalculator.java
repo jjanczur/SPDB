@@ -1,8 +1,8 @@
 package calculators;
 
 import model.Cluster;
-import model.Results;
 import model.Point;
+import model.Results;
 
 import java.util.HashMap;
 import java.util.List;
@@ -35,6 +35,7 @@ public class ResultsCalculator {
 
         return new Results(nrOfPoints, nrOfPositiveClassifiedPoints, accuracy, averagePurity);
     }
+
 
     /**
      * Method to calculate metrics for each cluster
