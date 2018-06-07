@@ -70,7 +70,6 @@ public class ResultsVisualization {
     }
 
 
-    //TODO poprawić bo nie działa zbyt dobrze :/
     /**
      * Method to draw and save visualization image
      * @param outputFileName - output filename

@@ -1,5 +1,6 @@
 import algorithm.ChameleonAlgorithm;
 import calculators.ResultsCalculator;
+import graphics.ResultsVisualization;
 import helpers.CsvParser;
 import model.Cluster;
 import model.Point;
@@ -42,10 +43,9 @@ public class Combiner {
         ResultsCalculator resultsCalculator = new ResultsCalculator();
         Results results = resultsCalculator.calculate(clusters);
 
-        // Visualize results // Nie działa poprawnie
-        //TODO poprawić wizualizajce - rysowanie punktów
-        //ResultsVisualization visualization = new ResultsVisualization(clusters);
-        //visualization.drawImage(fileName.replace(".csv", ".png")); // rzuca błędami do poprawy później
+
+        ResultsVisualization visualization = new ResultsVisualization(clusters);
+        visualization.drawImage(fileName.replace(".csv", ".png"));
 
         // Print results
         System.out.println("Results: ");
